@@ -38,7 +38,7 @@ class NightWeatherUI extends StatelessWidget {
                           Expanded(
                             child:
                                 GetBuilder<NightUIController>(builder: (ctr) {
-                              return Text(ctr.city.text ?? 'Lagos',
+                              return Text(ctr.city.text,
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 20));
                             }),
@@ -52,7 +52,7 @@ class NightWeatherUI extends StatelessWidget {
                       children: [
                         GetBuilder<NightUIController>(builder: (context) {
                           return Text(
-                            '${ctr.temp}' ?? '23\u00B0',
+                            '${ctr.temp}',
                             style: TextStyle(
                                 color: Colors.lightBlueAccent, fontSize: 120),
                           );
